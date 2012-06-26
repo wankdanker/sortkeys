@@ -1,7 +1,7 @@
 sortkeys
 --------
 
-This function returns a copy of an object whose keys sorted by the default 
+This function returns a copy of an object whose keys are sorted by the default 
 method of `Array.sort().`
 
 An example should explain it:
