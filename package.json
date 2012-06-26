@@ -8,9 +8,15 @@
     "url": "git://github.com/wankdanker/sortkeys.git"
   },
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "nodeunit": "*"
+  },
   "optionalDependencies": {},
   "engines": {
     "node": "*"
+  },
+  "homepage": "https://github.com/wankdanker/sortkeys",
+  "scripts": {
+    "test": "nodeunit test/test.js"
   }
 }
