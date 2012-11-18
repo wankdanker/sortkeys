@@ -4,10 +4,10 @@
 
 module.exports = sortkeys;
 
-function sortkeys(obj) {
+function sortkeys(obj, comparator) {
   var o = {};
   
-  Object.keys(obj).sort().forEach(function (key) {
+  Object.keys(obj).sort(comparator).forEach(function (key) {
     if (typeof(obj[key]) == "object") {
       o[key] = sortkeys(obj[key]);
     }
@@ -17,4 +17,5 @@ function sortkeys(obj) {
   });
   
   return o;
+
 }
