@@ -1,6 +1,8 @@
 sortkeys
 --------
 
+[![Build Status](https://travis-ci.org/wankdanker/sortkeys.svg)](https://travis-ci.org/wankdanker/sortkeys)
+
 This function recursively sorts the keys of an object according to `Object.keys(obj).sort().`
 
 An example should explain it:
