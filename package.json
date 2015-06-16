@@ -2,7 +2,7 @@
   "author": "Dan VerWeire <dverweire@gmail.com>",
   "name": "sortkeys",
   "description": "Sort the keys of an object recursively",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "git://github.com/wankdanker/sortkeys.git"
