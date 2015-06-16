@@ -5,17 +5,19 @@
 module.exports = sortkeys;
 
 function sortkeys(obj, comparator) {
-  var o = {};
-  
+  var t;
+
   Object.keys(obj).sort(comparator).forEach(function (key) {
     if (typeof(obj[key]) == "object") {
-      o[key] = sortkeys(obj[key]);
+      t = sortkeys(obj[key]);
     }
     else {
-      o[key] = obj[key];
+      t = obj[key];
     }
+
+    delete obj[key];
+    obj[key] = t;
   });
   
-  return o;
-
+  return obj;
 }

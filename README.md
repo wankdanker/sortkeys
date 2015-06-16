@@ -1,8 +1,7 @@
 sortkeys
 --------
 
-This function returns a copy of an object whose keys are sorted by the default 
-method of `Array.sort().`
+This function recursively sorts the keys of an object according to `Object.keys(obj).sort().`
 
 An example should explain it:
 
@@ -26,3 +25,8 @@ console.log(sortkeys(objToSort));
   f: 'is for fig' }
 */
 ```
+
+license
+-------
+
+MIT
